@@ -1,0 +1,280 @@
+body {
+  margin: 0;
+  background-color: #0d0d0d;
+  overflow: auto;
+  scroll-snap-type: smooth;
+}
+
+body .section {
+  scroll-snap-align: top;
+  overflow: auto;
+  width: 100vw;
+}
+
+/*nav bar*/
+header {
+  background-color: #0d0d0d;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+header ul {
+  list-style: none;
+  float: right;
+  text-decoration: none;
+  color: #3CF2F3;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18pt;
+}
+#tabs li {
+  display: inline-block;
+  padding-right: 16px;
+  width: max-content;
+}
+
+a{
+  color: #3CF2F3;
+  text-decoration: none;
+}
+
+#line1, #line2, #line3, #line4 {
+  display: none;
+}
+
+
+/*footer*/
+.footer {
+  background-color: #0d0d0d;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer ul {
+  float: right;
+  color: #3CF2F3;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18pt;
+}
+footer li {
+  display: inline-block;
+  padding: 0px 8px;
+}
+/*hero section*/
+.heroImg {
+  background-color: #0d0d0d;
+  padding: 100px 16px;
+  width: 100%;
+}
+.content {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0px;
+  text-align: center;
+}
+button {
+  padding: 16px;
+  background-color: #3cf2f3;
+  color: #0d0d0d;
+  border-radius: 16px;
+  font-size: 16pt;
+  font-weight: 200;
+}
+
+/* my work section */
+#myWork {
+  padding-top: 16px;
+  background-color: #0d0d0d;
+}
+.heading {
+  text-align: center;
+  font-size: 24px;
+  background-color: #0d0d0d;
+  padding-top: 32;
+}
+.workGrid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+  "img1 project1"
+  "project2 img2"
+  "img3 project3"
+  ;
+}
+.workGrid img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+.img1 {
+  grid-area: img1;
+  float:right;
+  padding: 32px;
+}
+.img2 {
+  grid-area: img2;
+  padding: 32px;
+}
+.img3 {
+  grid-area: img3;
+  float:right;
+  padding: 32px;
+}
+.project1 {
+  grid-area: project1;
+  float:left;
+  padding-top: 32px;
+}
+.project2 {
+  grid-area: project2;
+  text-align: right;
+  padding-top: 32px;
+}
+.project3 {
+  grid-area: project3;
+  float: left;
+  padding-top: 32px;
+}
+#myWork h4 {
+  text-align: center;
+  text-decoration: underline;
+  padding: 0px;
+}
+
+/* about section */
+#aboutMe {
+  padding: 16px;
+  margin: 0 auto;
+  background-color: #0d0d0d;
+}
+#aboutImage {
+  width: 500px;
+}
+#aboutMe p {
+  text-align: left;
+  padding-left: 96px;
+  padding-right: 96px;
+}
+#aboutMe h3 {
+  text-align: left;
+}
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.bio {
+  padding-left: 96px;
+}
+.flexContainer div {
+  width: 25%;
+  margin: 0 auto;
+}
+.flexContainer2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+}
+
+.flexContainer ul {
+  color: white;
+  list-style: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16pt;
+  font-weight: 250;
+  line-height: 1.5;
+}
+
+
+/*contact section*/
+#contact {
+  background-color: #0d0d0d;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+#contactInfo .content {
+  padding-top: 128px;
+  padding-bottom: 256px;
+}
+
+/*font styles*/
+h1, h2, h3, h4 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  font-weight: 200;
+  font-size: 16pt;
+}
+h1, .heading {
+  font-size: 32pt;;
+  font-weight: medium;
+  color: #3CF2F3;
+}
+h2 {
+  font-size: 24pt;
+  color: #ffffff;
+}
+h3 {
+  font-size: 16pt;
+  font-weight: medium;
+  color: #3CF2F3;
+}
+h4 {
+  font-size: 16pt;
+  font-weight: normal;
+  color: #3CF2F3;
+}
+
+
+@media only screen and (max-width:600){
+  .flexContainer {
+    flex-direction: column;
+  }
+  .flexContainer div {
+    width: 100%;
+  }
+  .workGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 250px 250px 250px 250px 250px 250px;
+    grid-template-areas:
+    "img1" 
+    "project1"
+    "img2" 
+    "project2"
+    "img3" 
+    "project3"
+    ;
+  }
+  .workGrid img {
+    max-width: 250;
+    margin: 0 auto;
+    display: block;
+  }
+  .img1 {
+    grid-area: img1;
+  }
+  .img2 {
+    grid-area: img2;
+  }
+  .img3 {
+    grid-area: img3;
+  }
+  .project1 {
+    grid-area: project1;
+  }
+  .project2 {
+    grid-area: project2;
+  }
+  .project3 {
+    grid-area: project3;
+  }
+}
