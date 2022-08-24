@@ -4,6 +4,64 @@ $("button").on("click", function(){
     }
 );
 
+/*nav tab hovers*/
+$("#tabs").on("hover", function() {
+    console.log("you hovered over the nav bar"); 
+  } 
+  );
+$("#work").hover(
+      function () {
+          $("#work").css("fontWeight", "bold");
+          $("#line1").fadeIn();
+      },
+      function () {
+          $("#work").css("fontWeight", "normal");
+          $("#line1").fadeOut();
+      }
+);
+$("#about").hover(
+      function () {
+          $("#about").css("fontWeight", "bold");
+          $("#line2").fadeIn();
+      },
+      function () {
+          $("#about").css("fontWeight", "normal");
+          $("#line2").fadeOut();
+      } 
+); 
+$("#contact").hover(
+      function () {
+          $("#contact").css("fontWeight", "bold");
+          $("#line3").fadeIn();
+      },
+      function () {
+          $("#contact").css("fontWeight", "normal");
+          $("#line3").fadeOut();
+      } 
+);
+$("#resume").hover(
+      function () {
+          $("#resume").css("fontWeight", "bold");
+          $("#line4").fadeIn();
+      },
+      function () {
+          $("#resume").css("fontWeight", "normal");
+          $("#line4").fadeOut();
+      }
+);
+/* nav scroll*/ 
+$("#tabs").on("click", function (event){
+    if(this.hash !=='') {
+        e.preventDefault ();
+        const hash = this.hash;
+        $("html, body").animate({
+            scrollTop: $(hash).offset().top
+        }, 800);
+    }
+ });
+
+
+/* button interactions*/
 $("button").on("hover", function() {
     console.log("you hovered over a button");
     }    
@@ -47,56 +105,6 @@ $("#button3").hover(
         $("#button3").css("background-color", "#3cf2f3"); 
 }
 );
-
-$("#tabs").on("hover", function() {
-  console.log("you hovered over the nav bar"); 
-} 
-);
-$("#work").hover(
-    function () {
-        $("#work").css("fontWeight", "bold");
-        $("#line1").fadeIn();
-    },
-    function () {
-        $("#work").css("fontWeight", "normal");
-        $("#line1").fadeOut();
-    }
-);
-$("#about").hover(
-    function () {
-        $("#about").css("fontWeight", "bold");
-        $("#line2").fadeIn();
-    },
-    function () {
-        $("#about").css("fontWeight", "normal");
-        $("#line2").fadeOut();
-    } 
-); 
-$("#contact").hover(
-    function () {
-        $("#contact").css("fontWeight", "bold");
-        $("#line3").fadeIn();
-    },
-    function () {
-        $("#contact").css("fontWeight", "normal");
-        $("#line3").fadeOut();
-    } 
-);
-$("#resume").hover(
-    function () {
-        $("#resume").css("fontWeight", "bold");
-        $("#line4").fadeIn();
-    },
-    function () {
-        $("#resume").css("fontWeight", "normal");
-        $("#line4").fadeOut();
-    }
-);
-
-$("#allProjects").on("hover", function(){
-    console.log("you hovered over view all projects");
-});
-
 $("#allProjects").hover (
     function (){
         $("#allProjects").css("fontWeight", "bold");
@@ -107,7 +115,54 @@ $("#allProjects").hover (
         $("#allProjects").css("color", "#33f2f3");
     }
 );
-$(".nav").on("click", function (event){
+
+/*footer tab hovers*/ 
+$("#footerNav").on("hover", function() {
+    console.log("you hovered over the footer nav"); 
+  } 
+);
+$("#work2").hover(
+    function () {
+        $("#work2").css("fontWeight", "bold");
+        $("#line5").fadeIn();
+    },
+    function () {
+        $("#work2").css("fontWeight", "normal");
+        $("#line5").fadeOut();
+    }
+);
+$("#about2").hover(
+    function () {
+        $("#about2").css("fontWeight", "bold");
+        $("#line6").fadeIn();
+    },
+    function () {
+        $("#about2").css("fontWeight", "normal");
+        $("#line6").fadeOut();
+    } 
+); 
+$("#contact2").hover(
+    function () {
+        $("#contact2").css("fontWeight", "bold");
+        $("#line7").fadeIn();
+    },
+    function () {
+        $("#contact2").css("fontWeight", "normal");
+        $("#line7").fadeOut();
+    } 
+);
+$("#resume2").hover(
+    function () {
+        $("#resume2").css("fontWeight", "bold");
+        $("#line8").fadeIn();
+    },
+    function () {
+        $("#resume2").css("fontWeight", "normal");
+        $("#line8").fadeOut();
+    }
+);
+/* nav scroll*/ 
+$("#footerNav").on("click", function (event){
     if(this.hash !=='') {
         e.preventDefault ();
         const hash = this.hash;

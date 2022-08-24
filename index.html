@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async 
+    src="https://www.googletagmanager.com/gtag/js?id=G-WEDNYXGPEN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WEDNYXGPEN');
+    </script>
     <!-- Hotjar Tracking Code for https://kaylab521.github.io/ux_ui_hw_19/ -->
     <script>
       (function(h,o,t,j,a,r){
@@ -18,13 +28,13 @@
 
   <body>
     <header>
-      <img src="images/Kayla Boland.png">
+      <h1>KAYLA BOLAND</h1>
       <div id="tabs" class="nav">
         <ul>
           <li id="work"><a href="#myWork">My Work</a><div id="line1" style="width: work; height: 3px; background-color: #f322bb;"></div></li>
           <li id="about"><a href="#aboutMe">About</a><div id="line2" style="width: about; height: 3px; background-color: #f322bb;"></div></li>
           <li id="contact"><a href="#contactInfo">Contact</a><div id="line3" style="width: contact; height: 3px; background-color: #f322bb;"></div></li>
-          <li id="resume">Resume<div id="line4" style="width: resume; height: 3px; background-color: #f322bb;"></div></li>
+          <li id="resume"><a href="index.html">Resume</a><div id="line4" style="width: resume; height: 3px; background-color: #f322bb;"></div></li>
         </ul>  
       </div>  
     </header>
@@ -34,7 +44,7 @@
         <div class="content">
           <h1>HI, I'M KAYLA</h1>
           <h2>I am a UX / UI Designer based out of Denver, CO</h2>
-          <button id="downloadResume">View Resume</button>
+          <button id="downloadResume"><a href="coming soon.html">View Resume</a></button>
         </div>
       </section>
     </div>
@@ -52,7 +62,7 @@
             <div class="project1">
               <h3>NON-PROFIT WEBSITE REDESIGN</h3>
               <p>A website and branding redesign for Abilis, a non-profit organization dedicated to serving people with disabilities.</p>
-              <button id="button1">View Project</button>
+              <button id="button1"><a href="coming soon.html">View Project</a></button>
             </div>
             
             <div class="img2">
@@ -62,21 +72,21 @@
             <div class="project2">
               <h3>GOVERNMENT AGENCY WEBSITE REDESIGN</h3>
               <p>Simplifying the Navigation Experience and Adding Responsive Web Design to FTC Website.</p>
-              <button id="button2">View Project</button>
+              <button id="button2"><a href="coming soon.html">View Project</a></button>
             </div>
   
             <div class="img3">
-              <img src="images/images/reminders2.png">
+              <img src="images/reminders2.png">
             </div>
   
             <div class="project3">
               <h3>REMINDERS APP PROPOSAL</h3>
               <p>Updating Apple’s Reminders app to deliver a more engaging task management experience. </p>
-              <button id="button3">View Project</button>
+              <button id="button3"><a href="coming soon.html">View Project</a></button>
             </div>
             
         </div>
-        <h4 id="allProjects">View All Projects</h4>
+        <h4 id="allProjects"><a href="coming soon.html">View All Projects</a></h4>
       </section>
     </div>
 
@@ -84,21 +94,24 @@
       <section id="aboutMe">
         <h1 class="heading">About Me</h1>
         <div class="flexContainer2">
-          <div>
-            <h3 class="bio">Hi, I'm Kayla</h3>
+         <div id="meImg">
+            <img src="images/image.png">
+          </div> 
+          <div id="bio">
+            <h3>HI, I'M KAYLA</h3>
             <p>I’m a creative and self-driven designer. Before I received my UX / UI Design Certificate from the University of Denver, I spent a year working as a victim advocate. My work experience combined with my education has allowed me to develop a compassionate and human-centered approach to solving user problems.</p> 
             <p>I am passionate about crafting beautiful UIs that deliver enjoyable experiences. Some of my strengths include my creativity, strong research skills, adaptability, and empathy.</p>
             <p>Outside of design, you can usually find me writing or listening to music.</p>
           </div>
-          <div id="meImage">
-            <img src="images/image.png">
-          </div>
+          
+          
+          
         </div>
 
         
         <!--Skills section coded using CSS Flex-->
         <div class="flexContainer">
-          <div>
+          <div id ="skills1">
             <ul>
               <h3>UX DESIGN SKILLS</h3>
               <li>Affinity Mapping</li>
@@ -117,7 +130,7 @@
           </ul>
         </div>
         
-        <div>
+        <div id ="skills2">
           <ul>
             <h3>TECHNICAL SKILLS</h3>
             <li>Adobe XD</li>
@@ -134,7 +147,7 @@
           </ul>
         </div>
         
-        <div>
+        <div id ="skills3">
           <ul>
             <h3>SOFT SKILLS</h3>
               <li>Critical Thinking</li>
@@ -165,19 +178,15 @@
     </div>
 
     <footer>
-     <section class="footer"> 
-        <div class="logo">
-            <img src="images/Kayla Boland.png">
-        </div>
-        <div id="tabs">
-         <ul>
-            <li id="work">About</li>
-            <li>Work</li>
-            <li>Contact</li>
-            <li>Resume</li>
-         </ul>
-        </div> 
-     </section>
+      <h1 id="logo">KAYLA BOLAND</h1>
+      <div>
+        <ul id="footerNav">
+          <li id="work2"><a href="#myWork">My Work</a><div id="line5" style="width: work; height: 3px; background-color: #f322bb;"></div></li>
+          <li id="about2"><a href="#aboutMe">About</a><div id="line6" style="width: about; height: 3px; background-color: #f322bb;"></div></li>
+          <li id="contact2"><a href="#contactInfo">Contact</a><div id="line7" style="width: contact; height: 3px; background-color: #f322bb;"></div></li>
+          <li id="resume2">Resume<div id="line8" style="width: resume; height: 3px; background-color: #f322bb;"></div></li>
+        </ul>
+      </div> 
     </footer>
 
   </body>

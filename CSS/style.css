@@ -1,7 +1,6 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   background-color: #0d0d0d;
-  overflow: auto;
   scroll-snap-type: smooth;
 }
 
@@ -14,29 +13,31 @@ body .section {
 /*nav bar*/
 header {
   background-color: #0d0d0d;
-  padding: 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 header ul {
   list-style: none;
-  float: right;
-  text-decoration: none;
   color: #3CF2F3;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 18pt;
+  display: flex;
 }
 #tabs li {
-  display: inline-block;
-  padding-right: 16px;
   width: max-content;
+  padding-left: 32px;
 }
 
 a{
   color: #3CF2F3;
   text-decoration: none;
+}
+h4 a:hover {
+  color: #f322bb;
 }
 
 #line1, #line2, #line3, #line4 {
@@ -44,28 +45,11 @@ a{
 }
 
 
-/*footer*/
-.footer {
-  background-color: #0d0d0d;
-  padding: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-footer ul {
-  float: right;
-  color: #3CF2F3;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 18pt;
-}
-footer li {
-  display: inline-block;
-  padding: 0px 8px;
-}
 /*hero section*/
 .heroImg {
   background-color: #0d0d0d;
-  padding: 100px 16px;
+  padding-top: 128px;
+  padding-bottom: 128px;
   width: 100%;
 }
 .content {
@@ -82,10 +66,15 @@ button {
   font-size: 16pt;
   font-weight: 200;
 }
+button a{
+  color:#0d0d0d;
+}
 
 /* my work section */
 #myWork {
   padding-top: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
   background-color: #0d0d0d;
 }
 .heading {
@@ -147,7 +136,6 @@ button {
 
 /* about section */
 #aboutMe {
-  padding: 16px;
   margin: 0 auto;
   background-color: #0d0d0d;
 }
@@ -156,29 +144,24 @@ button {
 }
 #aboutMe p {
   text-align: left;
-  padding-left: 96px;
-  padding-right: 96px;
+  width: auto;
 }
 #aboutMe h3 {
   text-align: left;
+  width: fit-content;
+}
+.flexContainer li {
+  width: fit-content;
 }
 .flexContainer {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
-.bio {
-  padding-left: 96px;
-}
+
 .flexContainer div {
   width: 25%;
   margin: 0 auto;
-}
-.flexContainer2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 0;
 }
 
 .flexContainer ul {
@@ -188,6 +171,32 @@ button {
   font-size: 16pt;
   font-weight: 250;
   line-height: 1.5;
+}
+
+
+.flexContainer2 {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  
+} 
+.flexContainer2 div {
+  width: 100%;
+  margin: 32px;
+}
+
+.meImg {
+  display: flexbox;
+  align-items: center;
+  width: fit-content;
+  padding-left: 32px;
+  padding-right: 16px;
+}
+.bio {
+  display:flex;
+  justify-content: center;
+  padding-left: 16px;
+  padding-right: 32px;
 }
 
 
@@ -217,6 +226,7 @@ h1, .heading {
   font-size: 32pt;;
   font-weight: medium;
   color: #3CF2F3;
+  width: 100%;
 }
 h2 {
   font-size: 24pt;
@@ -233,48 +243,158 @@ h4 {
   color: #3CF2F3;
 }
 
+/*footer*/
+footer {
+  background-color: #0d0d0d;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  
+}
+#footerNav {
+  list-style: none;
+  display: flex;
+}
+#footerNav li {
+  color: #3CF2F3;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18pt;
+  width: max-content;
+  padding-left: 32px;
+}
+#line5, #line6, #line7, #line8 {
+  display: none;
+}
 
-@media only screen and (max-width:600){
-  .flexContainer {
-    flex-direction: column;
+
+@media all and (max-width:1000px){
+  .h1 {
+    font-size: 48pt;
+    width: fit-content;
   }
-  .flexContainer div {
-    width: 100%;
+  p {
+    font-size: 18pt;
   }
   .workGrid {
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 250px 250px 250px 250px 250px 250px 250px;
+    grid-template-rows: 1fr;
     grid-template-areas:
     "img1" 
     "project1"
-    "img2" 
-    "project2"
+    "img2"
+    "project2" 
     "img3" 
     "project3"
     ;
   }
   .workGrid img {
-    max-width: 250;
+    max-width: 1fr;
     margin: 0 auto;
     display: block;
   }
   .img1 {
     grid-area: img1;
+    padding-top: 128px;
   }
   .img2 {
     grid-area: img2;
+    padding-top: 256px;
   }
   .img3 {
     grid-area: img3;
+    padding-top: 256px;
   }
   .project1 {
     grid-area: project1;
+    text-align: center;
   }
   .project2 {
     grid-area: project2;
+    text-align: center;
   }
   .project3 {
     grid-area: project3;
+    text-align: center;
   }
+  .myWork h4 {
+    padding-bottom: 256px;
+  }
+
+  .flexContainer {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "skills1"
+    "skills2"
+    "skills3"
+  ;
+  }
+
+  .flexContainer div {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .flexContainer ul {
+    text-align: center;
+    
+  }
+  .flexContainer li {
+    text-align: center;
+  }
+  .skills1 {
+    grid-area: skills1;
+    max-width: fit-content;
+    padding-left: 0;
+    text-align: center;
+  }
+  .skills2 {
+    grid-area: skills2;
+    max-width: fit-content;
+    
+  }
+  .skills3 {
+    grid-area: skills3;
+    max-width: fit-content;
+  }
+  .flexContainer2 {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding-left: 64px;
+    padding-right: 64px;
+    justify-content: center;
+
+  } 
+  .flexContainer2 div {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .flexContainer2 .meImg {
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
+  }
+  .bio {
+    display:flex;
+    justify-content: flex-start;
+  }
+  .skills1 ul {
+    max-width: fit-content;
+    text-align: center;
+  }
+  .skills h3{
+    max-width: fit-content;
+  }
+
 }
